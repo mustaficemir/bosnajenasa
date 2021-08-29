@@ -1,0 +1,175 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: inherit;
+}
+
+
+
+
+html{
+
+    
+    font-size: 10px;
+
+}
+
+
+
+
+
+body{
+font-size: 3rem;
+font-family: 'Lato', 'Times New Roman', Times, serif;
+line-height: 1.6;
+color: grey;
+box-sizing: border-box;
+
+
+}
+.header{
+    background-image: linear-gradient(to right bottom,rgba(11, 128, 0, 0.534),rgba(128, 128, 0, 0.678)),url(img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    position: relative;
+
+}
+
+.logo-area{
+top:2rem;
+left: 3rem;
+position: absolute;
+
+}
+.logo{
+    height: 3rem;
+}
+
+.texting{
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+
+}
+
+.Primary-Heading{
+    color: white;
+text-transform: uppercase;
+}
+.heading-main{
+font-size: 4rem;
+letter-spacing: 1rem ;
+font-weight: 500;
+text-align: center;
+display: block;
+margin: 2rem;
+animation-name: anime;
+/*animacija*/
+animation-duration:2s;
+animation-timing-function: ease-out;
+
+}
+.heading-sub{
+display: block;
+    font-size: 1.8rem;
+    letter-spacing: 1.4rem;
+font-weight: 500;
+text-align: center;
+animation-name:animeo;
+animation-duration:2s;
+animation-timing-function: ease-out;
+
+
+}
+
+@keyframes anime {
+0%{
+    transform: translateX(-10rem);
+}
+100%{
+    transform: translate(0);
+}
+
+}
+@keyframes animeo {
+    0%{
+    transform: translateX(10rem);    
+    }
+    100%{
+        transform:translate(0);
+    }
+}
+@keyframes animeos {
+    0%{
+    transform: translateY(3rem);    
+    opacity: 0;
+    }
+    100%{
+        transform:translate(0);
+
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    font-size: 1.7rem;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 1rem;
+}
+.btn:hover{
+
+transform: translateY(-.3rem);
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.247);
+
+}
+.btn:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.247);
+
+}
+
+.btn-white{
+    background-color: white;
+    color: grey;
+}
+.btn:after {
+    content: "";
+    display: inline-block;
+    height: 80%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+transition: all.4s;
+}
+
+.btn-white:after{
+background-color: white;
+}
+
+.btn:hover::after{
+
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+
+}
+
+.btn-animated{
+
+animation: animeos .4s ease-out .75s;
+animation-fill-mode: backwards;
+}
+
+
