@@ -35,27 +35,35 @@ box-sizing: border-box;
     height: 95vh;
     position: relative;
 
+    clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
+    &__logo-area{
+        top:2rem;
+        left: 3rem;
+        position: absolute;}
+
+            &__logo-area{
+                top:2rem;
+                left: 3rem;
+                position: absolute;}
+                &__logo{
+                    height: 3rem;
+                }
+
+
+
+&__texting{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+
 }
 
-.header__logo-area{
-top:2rem;
-left: 3rem;
-position: absolute;
-
-}
-.header__logo{
-    height: 3rem;
-}
-
-.header__texting{
-top: 50%;
-left: 50%;
-position: absolute;
-transform: translate(-50%,-50%);
 
 }
 
-.Primary-Heading{
+.heading-primary{
     color: white;
 text-transform: uppercase;
 }
@@ -112,9 +120,9 @@ animation-timing-function: ease-out;
 
     }
 }
-
-.btn:link,
-.btn:visited{
+.btn{
+&:link,
+&:visited{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -126,23 +134,25 @@ animation-timing-function: ease-out;
     margin-left: 25%;
     margin-top: 2rem;
 }
-.btn:hover{
+
+
+&:hover{
 
 transform: translateY(-.3rem);
 box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.247);
 
 }
-.btn:active{
+&:active{
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.247);
 
 }
 
-.btn--white{
+&--white{
     background-color: white;
     color: grey;
 }
-.btn:after {
+&:after {
     content: "";
     display: inline-block;
     height: 80%;
@@ -153,23 +163,23 @@ box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.247);
     left: 0;
     z-index: -1;
 transition: all.4s;
-}
 
-.btn--white:after{
+
+&--white:after{
 background-color: white;
 }
 
-.btn:hover::after{
+&:hover::after{
 
     transform: scaleX(1.5) scaleY(1.6);
     opacity: 0;
 
 }
 
-.btn--animated{
+&--animated{
 
 animation: animeos .4s ease-out .75s;
 animation-fill-mode: backwards;
 }
-
-
+}
+}

@@ -18,23 +18,25 @@ body {
   background-size: cover;
   background-position: top;
   height: 95vh;
-  position: relative; }
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-area {
+    top: 2rem;
+    left: 3rem;
+    position: absolute; }
+  .header__logo-area {
+    top: 2rem;
+    left: 3rem;
+    position: absolute; }
+  .header__logo {
+    height: 3rem; }
+  .header__texting {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); }
 
-.header__logo-area {
-  top: 2rem;
-  left: 3rem;
-  position: absolute; }
-
-.header__logo {
-  height: 3rem; }
-
-.header__texting {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%); }
-
-.Primary-Heading {
+.heading-primary {
   color: white;
   text-transform: uppercase; }
 
@@ -79,8 +81,7 @@ body {
   100% {
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -115,14 +116,11 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
-
-.btn--white:after {
-  background-color: white; }
-
-.btn:hover::after {
-  transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0; }
-
-.btn--animated {
-  animation: animeos .4s ease-out .75s;
-  animation-fill-mode: backwards; }
+  .btn:after--white:after {
+    background-color: white; }
+  .btn:after:hover::after {
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0; }
+  .btn:after--animated {
+    animation: animeos .4s ease-out .75s;
+    animation-fill-mode: backwards; }
