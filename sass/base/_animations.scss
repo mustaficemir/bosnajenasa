@@ -1,0 +1,29 @@
+@keyframes anime {
+    0%{
+        transform: translateX(-10rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+    }
+    @keyframes animeo {
+        0%{
+        transform: translateX(10rem);    
+        }
+        100%{
+            transform:translate(0);
+        }
+    }
+    @keyframes animeos {
+        0%{
+        transform: translateY(3rem);    
+        opacity: 0;
+        }
+        100%{
+            transform:translate(0);
+    
+        }
+    }
+    
+    
