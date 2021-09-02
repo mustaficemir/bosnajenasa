@@ -1,7 +1,17 @@
-@import"base/base";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+@import "sass/abstracts/functions";
 
+@import "sass/base/base";
+@import "sass/base/animations";
+@import "sass/base/typografy";
+@import "sass/base/utility";
 
+@import "sass/components/button";
 
+@import"sass/pages/home";
+
+@import "sass/layout/header";
 
 
 
@@ -31,7 +41,7 @@ html{
 body{
 font-size: 3rem;
 font-family: 'Lato', 'Times New Roman', Times, serif;
-line-height: 1.6;
+line-height: 1.7;
 color: grey;
 box-sizing: border-box;
 
