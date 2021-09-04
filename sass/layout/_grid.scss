@@ -1,6 +1,6 @@
 .row{
 max-width: $grid-width;
-background-color: #eee;
+background-color:whitesmoke;
 margin: 0 auto;
 grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
 display: flex;
@@ -11,7 +11,6 @@ display: flex;
 }
 .col-1-of-2{
 width: calc((100% - #{$gutter-horizontal})/2);
-background-color: orangered;
 
 &:not(:last-child){
 margin-right: $gutter-horizontal;
